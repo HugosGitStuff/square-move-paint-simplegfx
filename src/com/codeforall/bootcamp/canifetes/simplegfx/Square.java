@@ -3,6 +3,12 @@ package com.codeforall.bootcamp.canifetes.simplegfx;
 import com.codeforall.simplegraphics.graphics.Rectangle;
 import com.codeforall.simplegraphics.graphics.Color;
 
+/* Notes:
+"The constructor initializes the square's position and size"
+"The move methods check boundary conditions before translating the square"
+"The getter methods return the square's current coordinates"
+*/
+
 public class Square {
 
     private Rectangle square;
@@ -58,12 +64,12 @@ public class Square {
         }
     }
 
-    // getter for X position to be used in MyKeyboard keyoressed keyboard event
+    // getter for X position to be used in MyKeyboard keypressed keyboard event
     public int getX() {
         return square.getX();
     }
 
-    // getter for Y position to be used in MyKeyboard keyoressed keyboard event
+    // getter for Y position to be used in MyKeyboard keypressed keyboard event
     public int getY() {
         return square.getY();
     }

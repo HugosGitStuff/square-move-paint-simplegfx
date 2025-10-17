@@ -5,6 +5,14 @@ import com.codeforall.simplegraphics.keyboard.KeyboardEvent;
 import com.codeforall.simplegraphics.keyboard.KeyboardEventType;
 import com.codeforall.simplegraphics.keyboard.KeyboardHandler;
 
+/*Notes:
+"This class implements the KeyboardHandler interface"
+"We override the keyPressed method to handle keyboard events"
+"We use conditional statements to determine which key was pressed"
+"The setter methods let us connect the keyboard to the square and grid,
+so the keyboard knows which objects to control."
+*/
+
 public class MyKeyboard implements KeyboardHandler {
     
     private Keyboard keyboard;

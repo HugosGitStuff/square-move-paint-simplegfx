@@ -3,6 +3,12 @@ package com.codeforall.bootcamp.canifetes.simplegfx;
 import com.codeforall.simplegraphics.graphics.Color;
 import com.codeforall.simplegraphics.graphics.Rectangle;
 
+/* Notes:
+"We use a two-dimensional array to store Rectangle objects representing each cell"
+"The draw method uses nested for loops to iterate through rows and columns"
+"We calculate each cell's position and store it in the array"
+*/
+
 public class BackgroundGrid {
 
     private int cellSize; // cell size
@@ -54,7 +60,7 @@ public class BackgroundGrid {
         int col = (squareX - startX) / cellSize;  // which column (subtract grid start, divide by cell size)
         int row = (squareY - startY) / cellSize;  // which row (subtract grid start, divide by cell size)
 
-        // fill the cell with color (already set to RED in draw method)
+        // fill the cell with color (already set to BLACK in draw method)
         gridArray[row][col].fill();
     }
 
